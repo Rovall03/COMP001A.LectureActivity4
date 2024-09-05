@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="table.html" target="_self">Table</a></li>
+            <li><a href="forms.html" target="_self"> Forms</a></li>
+            <li><a href="media.html" target="_self">Media </a></li>
+        </ul>
+        <h1>Forms</h1>
+    </nav>
+   </header> 
+   <main>
+<!--beginning of the form element-->
+<form action="/submit" method="post">
+    
+    <!--label and text input field-->
+    <label for="username"> Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter username">
+
+    <br><!-- adds a line brake-->
+
+    <!--label password field-->
+    <label for="password">Password</label>
+    <input type="Password" id="Password" name="Password" placeholder="Enter your password">
+
+    <br>
+
+    <!--label and email input field-->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="example@example.com">
+
+    <br>
+
+    <!--label and number field-->
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" min="1" max="100">
+
+    <br>
+
+    <!--radio buttons for gender selection-->
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+
+
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+
+    <br>
+
+    <!--Checkbox for newsletter subscriptions-->
+    <label for="subscribe">subscribe to newsletter</label>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+
+    <br>
+
+    <!--dropdown select for country selection-->
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <!--other options-->
+    </select>
+
+    <br>
+    <!--Texture for additional comments-->
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    <br>
+
+    <!--file input for uploading files -->
+    <label for="file">Upload your photo:</label>
+    <input type="file" id="file" name="file">
+
+    <br>
+
+    <!-- hidden input field( not visible to user)-->
+     <input type="hidden" id="userid" name="userid" value="12345" >
+
+     <br>
+
+     <!-- range input for selecting a value within a range -->
+      <label for="volume">volume</label>
+      <input type="range" id="volume" name="volume" min="0" max="10">
+
+      <br>
+
+      <!-- date input for selecting a date-->
+       <label for="birthday">Birth Date:</label>
+       <input type="date" id="birthdate" name="birthdate">
+
+       <br>
+
+       <!--color input for selecting a color-->
+       <label for="favcolor">Favorite Color</label>
+       <input type="color" id="favcolor" name="favcolor">
+
+       <br>
+
+       <!--submit button to submit the form-->
+       <input type="submit" value="submit">
+
+       <!--reset button to reset the form fields-->
+       <input type="reset" value="reset"> 
+
+</form>
+<!--end of the form element-->
+   </main>
+    <footer>
+        <p>&copy; Copyright 2024 Rosa Ovalle| <a href="https://github.com/Rovall03" target="_blank">Github</a></p>
+    </footer>
+</body>
+</html>
